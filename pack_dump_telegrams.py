@@ -43,9 +43,9 @@ def pack(target_dir: str, suffix: str = 'bin') -> None:
             recv_telegrams.append(item)
 
     for item in send_telegrams:
-        shutil.move(item.absolute(), f'{target_dir}/DumpTelegrams/Send/{item.name}')
+        shutil.move(item.absolute(), f'{target_dir}/DumpTelegrams/Send/{item.name}')  # noqa: E501
     for item in recv_telegrams:
-        shutil.move(item.absolute(), f'{target_dir}/DumpTelegrams/Recv/{item.name}')
+        shutil.move(item.absolute(), f'{target_dir}/DumpTelegrams/Recv/{item.name}')  # noqa: E501
 
 
 if __name__ == '__main__':

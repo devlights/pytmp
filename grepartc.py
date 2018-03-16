@@ -13,7 +13,7 @@ def _get_artc_files() -> ty.Iterator[str]:
     return (x.filename for x in sorted(files))
 
 
-def go():
+def go() -> None:
     os.chdir('/tmp/20180316/1_1から1_3')
 
     out_set_fp = open('out_set.txt', mode='w', encoding='utf-8')
