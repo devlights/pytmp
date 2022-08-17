@@ -11,6 +11,9 @@ task: [init] gp open main.py
 $ task run
 task: [run] python3 main.py
 
+$ task jupyter
+task: [jupyter] gp open main.ipynb
+
 $ task clean
 task: [clean] rm *.py
 ```
