@@ -1,0 +1,10 @@
+
+image: gitpod/workspace-full:latest
+
+tasks:
+  - name: install go-task
+    init: go install github.com/go-task/task/v3/cmd/task@latest
+
+vscode:
+  extensions:
+    - ms-python.python

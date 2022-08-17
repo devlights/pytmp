@@ -1,0 +1,15 @@
+version: "3"
+
+tasks:
+  init:
+    cmds:
+      - gp open main.py
+  run:
+    cmds:
+      - python3 main.py
+  version:
+    cmds:
+      - python3 -V
+  clean:
+    cmds:
+      - rm *.py
