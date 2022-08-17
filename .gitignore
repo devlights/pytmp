@@ -102,3 +102,4 @@ ENV/
 
 # Project specific
 *.py
+*.ipynb

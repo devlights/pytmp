@@ -4,6 +4,9 @@ tasks:
   init:
     cmds:
       - gp open main.py
+  jupyter:
+    cmds:
+      - gp open main.ipynb
   run:
     cmds:
       - python3 main.py
@@ -12,4 +15,5 @@ tasks:
       - python3 -V
   clean:
     cmds:
-      - rm *.py
+      - rm -f *.py
+      - rm -f *.ipynb
