@@ -7,6 +7,15 @@ tasks:
   jupyter:
     cmds:
       - gp open main.ipynb
+  fmt:
+    cmds:
+      - yapf -i main.py
+  vet:
+    cmds:
+      - cmd: pylint main.py
+        ignore_error: true
+      - cmd: mypy main.py
+        ignore_error: true
   run:
     cmds:
       - python3 main.py
