@@ -3,10 +3,10 @@ version: "3"
 tasks:
   init:
     cmds:
-      - gp open main.py
+      - touch main.py
   jupyter:
     cmds:
-      - gp open main.ipynb
+      - touch main.ipynb
   fmt:
     cmds:
       - yapf -i main.py
